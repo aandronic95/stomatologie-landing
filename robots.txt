@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /lumen/admin/
+Sitemap: https://stomatologie.devhub.md/sitemap.xml
