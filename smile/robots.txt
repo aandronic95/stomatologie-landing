@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /smile/admin/
+Sitemap: https://stomatologie.devhub.md/smile/sitemap.xml

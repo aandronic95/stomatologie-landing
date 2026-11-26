@@ -2,7 +2,8 @@
 (function () {
   var STORE = 'https://stan.store/devhubmd';
   var THEMES = [
-    { id: 'lumen', name: 'Lumen', buy: STORE, tag: { ro: 'Clinică', en: 'Clinic', ru: 'Клиника', it: 'Studio', uk: 'Клініка' } }
+    { id: 'lumen', name: 'Lumen', buy: STORE + '/p/site-pentru-clinic-stomatologic--lumen', tag: { ro: 'Clinică', en: 'Clinic', ru: 'Клиника', it: 'Studio', uk: 'Клініка' } },
+    { id: 'smile', name: 'Smile Line', buy: STORE + '/p/site-ortodontie-smile-line', tag: { ro: 'Ortodonție', en: 'Orthodontics', ru: 'Ортодонтия', it: 'Ortodonzia', uk: 'Ортодонтія' } }
   ];
   var T = {
     ro: { all: 'Toate design-urile', demo: 'Demo', admin: 'Panoul de administrare', buy: 'Cumpără acest site · 99 €', buyShort: '99 €', turnkey: 'La cheie de la 300 €', nav: 'Alte design-uri demo' },

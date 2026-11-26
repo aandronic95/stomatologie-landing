@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 Disallow: /lumen/admin/
+Disallow: /smile/admin/
 Sitemap: https://stomatologie.devhub.md/sitemap.xml

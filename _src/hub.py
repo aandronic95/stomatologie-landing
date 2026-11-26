@@ -6,8 +6,10 @@ LANGS = ['ro', 'en', 'ru', 'it', 'uk']
 LOCALE = {'ro': 'ro_RO', 'en': 'en_US', 'ru': 'ru_RU', 'it': 'it_IT', 'uk': 'uk_UA'}
 NAMES = {'ro': 'Română', 'en': 'English', 'ru': 'Русский', 'it': 'Italiano', 'uk': 'Українська'}
 STAN = 'https://stan.store/devhubmd'
-BUY = STAN          # replace with the Stan product link once it exists
-TURNKEY = STAN      # replace with the Stan "turnkey" product link
+BUY = 'https://stan.store/devhubmd/p/site-pentru-clinic-stomatologic--lumen'
+TURNKEY = 'https://stan.store/devhubmd/p/site-stomatologic-la-cheie--lumen'
+BUY_SMILE = 'https://stan.store/devhubmd/p/site-ortodontie-smile-line'
+TURNKEY_SMILE = 'https://stan.store/devhubmd/p/site-ortodontie-la-cheie-smile-line'
 PRICE, TURNKEY_FROM = 99, 300
 COUNTRIES = ['MD', 'RO', 'IT', 'UA', 'DE', 'GB', 'US']
 
@@ -35,8 +37,9 @@ T = {
    ('Cum ajung programările la noi?', 'Pe email prin Web3Forms (gratuit) sau în Telegram printr-un webhook. Pacienții pot scrie și pe WhatsApp, Viber sau suna direct.'),
    ('Pot pune domeniul meu?', 'Da. Adaugi fișierul CNAME și o înregistrare DNS; ghidul explică exact cum.'),
    ('Cine poate edita site-ul?', 'Oricine are tokenul GitHub al clinicii. Tokenul stă doar în browserul celui care editează.'),
-   ('Vor fi și alte design-uri?', 'Da. Motorul e comun, iar design-urile noi se adaugă ca teme. Primul design este Lumen.'),
+   ('Vor fi și alte design-uri?', "Da. Motorul e comun, iar design-urile noi se adaugă ca teme. Acum sunt două: Lumen pentru clinici generale și Smile Line pentru ortodonție."),
   ],
+  designs_h="Design-uri", designs_lead="Același motor și același panou, două stiluri. Alegi designul potrivit clinicii tale.", d_new="Nou", designs=[["Lumen", "Cald și liniștit, pentru clinici stomatologice generale: servicii, medici, prețuri și programare."], ["Smile Line", "Pentru ortodonție: comparație între aparate și alignere, etapele tratamentului, calculator de rate și înainte/după."]], d_demo="Demo", d_admin="Panou", d_buy="Cumpără",
   footer='Site-uri pentru saloane de frumusețe', demo_label='Design Lumen · demo', langs='Limbi'),
  'en': dict(
   title='Dental clinic website with admin panel — €99',
@@ -61,8 +64,9 @@ T = {
    ('How do booking requests reach us?', 'By email through Web3Forms (free) or in Telegram through a webhook. Patients can also message on WhatsApp, Viber or call.'),
    ('Can I use my own domain?', 'Yes. Add a CNAME file and one DNS record; the guide explains how.'),
    ('Who can edit the site?', 'Anyone with the clinic\'s GitHub token. The token is stored only in the editor\'s browser.'),
-   ('Will there be other designs?', 'Yes. The engine is shared and new designs are added as themes. The first design is Lumen.'),
+   ('Will there be other designs?', "Yes. The engine is shared and new designs are added as themes. There are two now: Lumen for general clinics and Smile Line for orthodontics."),
   ],
+  designs_h="Designs", designs_lead="One engine, one admin panel, two styles. Pick the design that fits your clinic.", d_new="New", designs=[["Lumen", "Warm and calm, for general dental clinics: services, doctors, prices and booking."], ["Smile Line", "For orthodontics: braces vs aligners comparison, treatment steps, monthly payment calculator and before/after."]], d_demo="Demo", d_admin="Admin", d_buy="Buy",
   footer='Websites for beauty salons', demo_label='Lumen design · demo', langs='Languages'),
  'ru': dict(
   title='Сайт для стоматологии с панелью управления — 99 €',
@@ -87,8 +91,9 @@ T = {
    ('Как к нам приходят заявки?', 'На почту через Web3Forms (бесплатно) или в Telegram через webhook. Пациенты также могут написать в WhatsApp, Viber или позвонить.'),
    ('Можно подключить свой домен?', 'Да. Добавляете файл CNAME и одну DNS-запись; инструкция объясняет как.'),
    ('Кто может редактировать сайт?', 'Тот, у кого есть токен GitHub клиники. Токен хранится только в браузере редактора.'),
-   ('Будут другие дизайны?', 'Да. Движок общий, новые дизайны добавляются как темы. Первый дизайн — Lumen.'),
+   ('Будут другие дизайны?', "Да. Движок общий, новые дизайны добавляются как темы. Сейчас их два: Lumen для клиник общего профиля и Smile Line для ортодонтии."),
   ],
+  designs_h="Дизайны", designs_lead="Один движок, одна панель, два стиля. Выберите дизайн под вашу клинику.", d_new="Новый", designs=[["Lumen", "Тёплый и спокойный, для стоматологий общего профиля: услуги, врачи, цены и запись."], ["Smile Line", "Для ортодонтии: сравнение брекетов и элайнеров, этапы лечения, калькулятор рассрочки и до/после."]], d_demo="Демо", d_admin="Панель", d_buy="Купить",
   footer='Сайты для салонов красоты', demo_label='Дизайн Lumen · демо', langs='Языки'),
  'it': dict(
   title='Sito per studio dentistico con pannello di gestione — 99 €',
@@ -113,8 +118,9 @@ T = {
    ('Come arrivano le prenotazioni?', 'Via email con Web3Forms (gratis) o su Telegram con un webhook. I pazienti possono anche scrivere su WhatsApp, Viber o chiamare.'),
    ('Posso usare il mio dominio?', 'Sì. Aggiungi un file CNAME e un record DNS; la guida spiega come.'),
    ('Chi può modificare il sito?', 'Chi ha il token GitHub dello studio. Il token resta solo nel browser di chi modifica.'),
-   ('Ci saranno altri design?', 'Sì. Il motore è comune e i nuovi design si aggiungono come temi. Il primo design è Lumen.'),
+   ('Ci saranno altri design?', "Sì. Il motore è comune e i nuovi design si aggiungono come temi. Ora sono due: Lumen per studi generali e Smile Line per l'ortodonzia."),
   ],
+  designs_h="Design", designs_lead="Un solo motore, un solo pannello, due stili. Scegli il design adatto al tuo studio.", d_new="Nuovo", designs=[["Lumen", "Caldo e tranquillo, per studi dentistici generali: servizi, medici, prezzi e prenotazioni."], ["Smile Line", "Per l'ortodonzia: confronto tra apparecchi e allineatori, fasi del trattamento, calcolatore delle rate e prima/dopo."]], d_demo="Demo", d_admin="Pannello", d_buy="Acquista",
   footer='Siti per saloni di bellezza', demo_label='Design Lumen · demo', langs='Lingue'),
  'uk': dict(
   title='Сайт для стоматології з панеллю керування — 99 €',
@@ -139,8 +145,9 @@ T = {
    ('Як до нас надходять заявки?', 'На пошту через Web3Forms (безкоштовно) або в Telegram через webhook. Пацієнти також можуть написати у WhatsApp, Viber або зателефонувати.'),
    ('Чи можна підключити свій домен?', 'Так. Додаєте файл CNAME та один DNS-запис; інструкція пояснює як.'),
    ('Хто може редагувати сайт?', 'Той, хто має токен GitHub клініки. Токен зберігається лише в браузері редактора.'),
-   ('Чи будуть інші дизайни?', 'Так. Рушій спільний, нові дизайни додаються як теми. Перший дизайн — Lumen.'),
+   ('Чи будуть інші дизайни?', "Так. Рушій спільний, нові дизайни додаються як теми. Зараз їх два: Lumen для клінік загального профілю та Smile Line для ортодонтії."),
   ],
+  designs_h="Дизайни", designs_lead="Один рушій, одна панель, два стилі. Оберіть дизайн під вашу клініку.", d_new="Новий", designs=[["Lumen", "Теплий і спокійний, для стоматологій загального профілю: послуги, лікарі, ціни та запис."], ["Smile Line", "Для ортодонтії: порівняння брекетів та елайнерів, етапи лікування, калькулятор розстрочки та до/після."]], d_demo="Демо", d_admin="Панель", d_buy="Купити",
   footer='Сайти для салонів краси', demo_label='Дизайн Lumen · демо', langs='Мови'),
 }
 
@@ -163,6 +170,9 @@ def ld(l, t):
         {'@type': 'Product', 'name': t['p1_name'] + ' — Lumen', 'description': t['desc'], 'image': SITE + 'img/lumen-desktop.webp', 'brand': {'@type': 'Brand', 'name': 'devhub.md'},
          'offers': {'@type': 'Offer', 'price': str(PRICE), 'priceCurrency': 'EUR', 'availability': 'https://schema.org/InStock', 'url': BUY,
                     'hasMerchantReturnPolicy': policy, 'shippingDetails': ship}},
+        {'@type': 'Product', 'name': t['p1_name'] + ' — Smile Line', 'description': t['designs'][1][1], 'image': SITE + 'img/smile-desktop.webp', 'brand': {'@type': 'Brand', 'name': 'devhub.md'},
+         'offers': {'@type': 'Offer', 'price': str(PRICE), 'priceCurrency': 'EUR', 'availability': 'https://schema.org/InStock', 'url': BUY_SMILE,
+                    'hasMerchantReturnPolicy': policy, 'shippingDetails': ship}},
         {'@type': 'FAQPage', 'mainEntity': [{'@type': 'Question', 'name': q, 'acceptedAnswer': {'@type': 'Answer', 'text': a}} for q, a in t['faq']]},
     ]
     return json.dumps({'@context': 'https://schema.org', '@graph': g}, ensure_ascii=False).replace('<', '\\u003c')
@@ -178,6 +188,12 @@ def page(l):
     p2 = ''.join(f'<li>{e(x)}</li>' for x in t['p2'])
     steps = ''.join(f'<li><span>{i + 1}</span><h3>{e(a)}</h3><p>{e(b)}</p></li>' for i, (a, b) in enumerate(t['steps']))
     faq = ''.join(f'<details{" open" if i == 0 else ""}><summary>{e(q)}</summary><p>{e(a)}</p></details>' for i, (q, a) in enumerate(t['faq']))
+    DES = [('lumen', 'lumen-desktop', BUY, False), ('smile', 'smile-desktop', BUY_SMILE, True)]
+    designs = ''.join(
+        f'<li class="des{" des--new" if new else ""}"><a class="des__img" href="/{slug}/{path(l)}"><img src="/img/{img}.webp" width="1200" height="750" alt="{e(n)}" loading="lazy"></a>'
+        f'<div class="des__b"><h3>{e(n)}{f" <em>{e(t[chr(100)+chr(95)+chr(110)+chr(101)+chr(119)])}</em>" if new else ""}</h3><p>{e(dsc)}</p>'
+        f'<p class="des__l"><a class="btn btn--p btn--s" href="{buy}">{e(t["d_buy"])} · {PRICE} €</a><a class="btn btn--g btn--s" href="/{slug}/{path(l)}">{e(t["d_demo"])} →</a><a href="/{slug}/admin/">{e(t["d_admin"])}</a></p></div></li>'
+        for (slug, img, buy, new), (n, dsc) in zip(DES, t['designs']))
     salon = 'https://salon.devhub.md/' + ('' if l in ('ro', 'en', 'uk') else l + '/')
     return f'''<!doctype html>
 <html lang="{l}">
@@ -217,6 +233,7 @@ def page(l):
     <span class="shots__l">{e(t['demo_label'])}</span>
   </a>
 </div></section>
+<section class="sec" id="designs"><div class="w"><h2>{e(t['designs_h'])}</h2><p class="lead des__lead">{e(t['designs_lead'])}</p><ul class="dess">{designs}</ul></div></section>
 <section class="sec"><div class="w"><h2>{e(t['incl_h'])}</h2><ul class="incl">{incl}</ul></div></section>
 <section class="sec sec--admin"><div class="w adm">
   <div><h2>{e(t['admin_h'])}</h2><p class="lead">{e(t['admin_p'])}</p><a class="btn btn--g" href="/lumen/admin/">{e(t['admin'])} →</a></div>
@@ -245,15 +262,15 @@ for l in LANGS:
     open(os.path.join(d, 'index.html'), 'w').write(page(l))
 open(os.path.join(ROOT, '404.html'), 'w').write(page('ro'))
 
-urls = [SITE + path(l) for l in LANGS] + [SITE + 'lumen/' + path(l) for l in LANGS]
+urls = [SITE + path(l) for l in LANGS] + [SITE + p + path(l) for p in ('lumen/', 'smile/') for l in LANGS]
 def alts(prefix): return ''.join(f'<xhtml:link rel="alternate" hreflang="{x}" href="{SITE}{prefix}{path(x)}"/>' for x in LANGS)
 sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">']
-for prefix in ['', 'lumen/']:
+for prefix in ['', 'lumen/', 'smile/']:
     for l in LANGS:
         sm.append(f'<url><loc>{SITE}{prefix}{path(l)}</loc>{alts(prefix)}</url>')
 sm.append('</urlset>')
 open(os.path.join(ROOT, 'sitemap.xml'), 'w').write('\n'.join(sm) + '\n')
-open(os.path.join(ROOT, 'robots.txt'), 'w').write(f'User-agent: *\nAllow: /\nDisallow: /lumen/admin/\nSitemap: {SITE}sitemap.xml\n')
+open(os.path.join(ROOT, 'robots.txt'), 'w').write(f'User-agent: *\nAllow: /\nDisallow: /lumen/admin/\nDisallow: /smile/admin/\nSitemap: {SITE}sitemap.xml\n')
 open(os.path.join(ROOT, '.nojekyll'), 'w').write('')
 print('hub ok')
 
