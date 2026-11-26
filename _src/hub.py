@@ -256,3 +256,14 @@ open(os.path.join(ROOT, 'sitemap.xml'), 'w').write('\n'.join(sm) + '\n')
 open(os.path.join(ROOT, 'robots.txt'), 'w').write(f'User-agent: *\nAllow: /\nDisallow: /lumen/admin/\nSitemap: {SITE}sitemap.xml\n')
 open(os.path.join(ROOT, '.nojekyll'), 'w').write('')
 print('hub ok')
+
+# Demo bar on every demo page (not the admin panel)
+import glob, re
+for f in glob.glob(os.path.join(ROOT, '*', '**', 'index.html'), recursive=True) + glob.glob(os.path.join(ROOT, '*', '404.html')):
+    rel = os.path.relpath(f, ROOT)
+    if rel.split(os.sep)[0] in LANGS or '/admin/' in '/' + rel.replace(os.sep, '/') or rel.startswith('_'):
+        continue
+    h = open(f).read()
+    if 'demo-kit.js' not in h:
+        open(f, 'w').write(h.replace('</head>', '<script src="/demo-kit.js" defer></script>\n</head>', 1))
+print('demo bar ok')
